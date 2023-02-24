@@ -30,7 +30,7 @@
   background-color: rgba(77, 138, 16, 0.425);
   display: flex;
   align-items: center;
-  border: 2px solid rgb(199, 198, 198);
+  border: 2px solid rgba(199, 198, 198, 0.973);
   border-radius: 15px;
   transition: 0.4s;
   cursor: pointer;
