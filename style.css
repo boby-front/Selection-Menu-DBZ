@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@import url("https://fonts.cdnfonts.com/css/manga-temple");
+
+.content {
+  height: 100vh;
+  width: 100%;
+  background: url(/Image/Paysage.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  margin: 10px 0px 10px 20px;
+}
+
+.perso {
+  height: 90px;
+  width: 380px;
+  background-color: rgba(77, 138, 16, 0.425);
+  display: flex;
+  align-items: center;
+  border: 2px solid rgb(199, 198, 198);
+  border-radius: 15px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.perso:hover {
+  border: 2px solid white;
+  box-shadow: 0px 0px 20px white, inset 0px 0px 20px white;
+}
+
+.perso .left {
+  height: 100%;
+  width: 90px;
+  background-color: rgba(45, 80, 9, 0.767);
+}
+
+.menu:nth-child(1) .perso .left {
+  background-image: url(/Image/Goku.png);
+  background-size: cover;
+}
+
+.menu:nth-child(2) .perso .left {
+  background-image: url(/Image/Broly.png);
+  background-size: cover;
+}
+
+.menu:nth-child(3) .perso .left {
+  background-image: url(/Image/Gohan.png);
+  background-size: cover;
+}
+
+.menu:nth-child(4) .perso .left {
+  background-image: url(/Image/Freezer.webp);
+  background-size: cover;
+}
+
+.perso .right h1 {
+  font-size: 2.2em;
+  font-weight: 900;
+  margin-left: 20px;
+}
+
+.perso-bg {
+  position: absolute;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  top: 0;
+  left: 20%;
+}
+
+.perso-bg img {
+  display: none;
+}
+
+.active .perso-bg img {
+  display: flex;
+}
